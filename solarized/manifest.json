@@ -1,0 +1,41 @@
+{
+  "manifest_version": 2,
+  "name": "Style",
+  "version": "1.0.0",
+  "description":"Style Change Extension(Solarized)",
+  "icons":
+  {
+    "16":"Images/16.png",
+    "48":"Images/48.png",
+    "128":"Images/128.png"
+  },
+  "background":
+  {
+    "scripts": ["background.js"]
+  },
+  "browser_action":
+  {
+    "default_icon": "Images/16.png",
+    "default_title": "Style Change"
+  },
+  "content_scripts":
+  [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content_scripts.js"],
+      "run_at": "document_start"
+      // "css": ["test1.css", "test2.css"],
+    }
+  ],
+  "permissions":
+  [
+    "contextMenus",       // 右键菜单
+    "tabs",               // 标签
+    "notifications",      // 通知
+    "webRequest",         // web 请求
+    "webRequestBlocking",
+    "storage",            // 插件本地存储
+    "http://*/*",         // 可以通过 executeScript 或者 insertCSS 访问的网站
+    "https://*/*"         // 可以通过 executeScript 或者 insertCSS 访问的网站
+  ]
+}

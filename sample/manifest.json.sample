@@ -1,0 +1,106 @@
+{
+  // (必需) 清单文件的版本,而且版本必须是2
+  "manifest_version": 2,
+
+  // (必需) 插件的名称
+  "name": "Style",
+
+  // (必须) 插件的版本
+  "version": "1.0.0",
+
+  // 插件描述
+  "description":"Style Change Extension(Solarized)",
+
+  // 图标,可以全部使用一个尺寸
+  "icons":
+  {
+    "16":"Images/16.png",
+    "48":"Images/48.png",
+    "128":"Images/128.png"
+  },
+
+  // 会一直常驻后台的 js 或者页面
+  "background":
+  {
+    // 有两种指定方式,如果指定 js,那么会自动生成一个背景页面
+    // "page": "background.html",
+    "scripts": "background.js"
+  },
+
+  // 浏览器右上角图标设置, browser_action, page_action, app 三个必须选一个
+  "browser_action":
+  {
+    "default_icon": "./Images/16.png",
+    "default_title": "Style Change",
+    // "default_popup": "popup.html"
+  },
+
+  // 需要直接注入页面的 js
+  "content_scripts":
+  [
+    {
+      // "matches": ["http://*/*", "https://*/*"],
+      // "<all_urls>" 表示匹配所有地址
+      "matches": ["<all_urls>"],
+
+      // 多个 js 按顺序注入
+      // "js": ["test1.js", "test2.js"],
+
+      // 多个 css 按顺序注入
+      // "css": ["test1.css", "test2.css"],
+
+      // 代码的注入时间,可选值: "document_start", "document_end", "document_idle",
+      // 最后一个表示页面空闲时,默认 "document_idle"
+      // "run_at": "document_start",
+    },
+
+    // 演示配置多个规则
+    {
+      // "matches": ["*://*/*.png", "*://*/*.jpg", "*://*/*.gif"],
+      // "js": ["test3.js"]
+    }
+  ],
+
+  // 权限申请
+  "permissions":
+  [
+    "contextMenus",       // 右键菜单
+    "tabs",               // 标签
+    "notifications",      // 通知
+    "webRequest",         // web 请求
+    "webRequestBlocking",
+    "storage",            // 插件本地存储
+    "http://*/*",         // 可以通过 executeScript 或者 insertCSS 访问的网站
+    "https://*/*",        // 可以通过 executeScript 或者 insertCSS 访问的网站
+  ],
+
+  // 普通页面能够直接访问的插件资源列表,如果不设置时无法直接访问的
+  // "web_accessible_resources": ["test4.js"],
+
+  // 插件主页
+  // "homepage_url": "www.baidu.com",
+
+  // 覆盖浏览器默认页面
+  "chrome_url_overrides":
+  {
+    // 覆盖浏览器默认的新标签页
+    "newtab": "newtab.html"
+  },
+
+  // 插件配置页
+  "options_ui":
+  {
+    "page": "options.html",
+    // 添加一些默认的样式,推荐使用
+    "chrome_style": true
+  },
+
+  // 向地址栏注册一个关键字以提供搜索建议,只能设置一个关键字
+  "omnibox": { "keyword": "style" },
+
+  // 默认语言
+  // "default_locale": "zh_CN",
+
+  // devtools 页面入口,注意只能指向一个 HTML 文件,不能是 js 文件
+  // "devtools_page": "devtools.html"
+}

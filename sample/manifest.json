@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2,
+    "name": "replace_url",
+    "version": "1.1.7.80",
+    "description": "replace the special url",
+    "icons":{"16":"Images/16.png","48":"Images/48.png","128":"Images/128.png"},
+    "background": {
+        "scripts": ["solarized-dark-everywhere.user.js"]
+    },
+    "browser_action":
+    {
+        "default_icon": "Images/128.png",
+        "name": "保存网页为PDF"
+    },
+
+    "permissions": [
+        "webRequest",
+		"webRequestBlocking",
+        "tabs",
+        "activeTab",
+        "notifications","storage","http://*/*","https://*/*"
+    ],
+
+    "web_accessible_resources":["solarized-dark-everywhere.user.js"],
+    "content_scripts":[{
+        "js":["solarized-dark-everywhere.user.js"],
+        "matches":["http://*/*","https://*/*"]
+    }]
+}
