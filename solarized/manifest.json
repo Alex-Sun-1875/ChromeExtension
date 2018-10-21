@@ -22,9 +22,9 @@
   [
     {
       "matches": ["<all_urls>"],
-      "js": ["content_scripts.js"],
+      // "js": ["content_scripts.js"],
+      "css": ["content_css_scripts.css"],
       "run_at": "document_start"
-      // "css": ["test1.css", "test2.css"],
     }
   ],
   "permissions":
