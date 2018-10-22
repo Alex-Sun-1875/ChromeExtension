@@ -7,21 +7,29 @@ a:visited {
 }
 
 a:link {
-  color: #cb4b16 !important;
+  /* color: #cb4b16 !important; */
+  color: #93a1a1 !important;
 }
 
 #browsecontent {
-  border-left: 3px solid #073642 !important;
-  border-right: 3px solid #073642 !important;
-  border-bottom: 3px solid #073642 !important;
+  border-left: 3px solid #839496 !important;
+  border-right: 3px solid #839496 !important;
+  border-bottom: 3px solid #839496 !important;
   background:#002b36 !important;
 }
 
 #browse {
-  /*
   margin-left: 0px !important;
   margin-right: 0px !important;
-  */
+}
+
+.addCommentsContainer {
+  font-family: monospace !important;
+  background-color: transparent !important;
+}
+
+a.lineNumber:link, a.lineNumber:visited {
+  background-color: transparent !important;
 }
 
 div#sandbar {
@@ -29,7 +37,13 @@ div#sandbar {
 }
 
 .gwt-FastTree {
+  font-size: 100% !important;
+  font-family: monospace !important;
   background:#002b36 !important;
+}
+
+.focusableScrollPanel {
+  background-color: #002b36 !important;
 }
 
 .outline-name {
@@ -42,6 +56,7 @@ div#sandbar {
 
 .x-c {
   background-color: #073642 !important;
+  padding-bottom: 4px;
 }
 
 .x-i>a {
@@ -54,6 +69,82 @@ div#sandbar {
 
 .n-m {
   color: darkgrey;
+}
+
+.f-rb {
+  background-color: #586e75 !important;
+}
+
+.f-hb {
+  background-color: #586e75 !important;
+}
+
+.f-u {
+  color: #93a1a1 !important;
+}
+
+.f-s {
+  font-size: 100% !important;
+  font-family: monospace !important;
+}
+
+.f-i {
+  border-right: 2px solid !important;
+  border-color: #839496 !important;
+  font-family: monospace !important;
+}
+
+.qb-g {
+  color: #f7981d !important;
+}
+
+.qb-h.qb-a {
+  margin-top: auto !important;
+  border-radius: 2px !important;
+}
+
+.focus .f-qb {
+  background-color: #586e75 !important;
+}
+
+#leftpanel_drag {
+  background-color: #839496 !important;
+}
+
+#breadcrumbs {
+  background-color: #839496 !important;
+}
+
+.gwt-FastTree .selected .treeItemContent,
+.gwt-FastTree .selected .treeItemContent .outlineparam,
+.gwt-FastTree .selected .treeItemContent .outlineicon {
+  background-color: #586e75 !important;
+}
+
+#bottompanel_drag, #modifiedfiles_drag {
+  background-color: #839496 !important;
+}
+
+.cs-TabLayoutPanelTabs {
+  border-top: solid 4px #839496 !important;
+  border-bottom: solid 2px #839496 !important;
+  background-color: #657b83 !important;
+}
+
+.cs-TabLayoutPanelTab {
+  margin: auto !important;
+}
+
+.content-header {
+  border-top: solid 4px #839496 !important;
+  background-color: #657b83 !important;
+  border-bottom: solid 2px #839496 !important;
+}
+
+.lineNumberContainer {
+  background-color: #073642 !important;
+  border-right: 2px solid !important;
+  border-color: #839496 !important;
 }
 
 div#source_code {
@@ -69,7 +160,7 @@ color: #000;
 }
 
 .stx-keyword,.stx-keyword a {
-  color: #b58900 !important;
+  color: #f7981d !important;
 }
 
 .stx-keyword-s,.stx-keyword-s a {
