@@ -1,14 +1,19 @@
-*{
+body {
   color:#93a1a1 !important;
   background:#002b36 !important;
 }
-a{
+div {
+  color:#93a1a1 !important;
+  background:#002b36 !important;
+}
+a {
   color:#2aa198 !important;
 }
 code, pre, tt{
   color:#b58900 !important;
   background:#073642 !important;
 }
+/*
 tt{
   border:0px solid #93a1a1 !important;
 }
@@ -18,5 +23,5 @@ pre{
 a:hover{
   background:#073642 !important;
 }
-
+*/
 /* .nohighlight:focus { outline:none; } */

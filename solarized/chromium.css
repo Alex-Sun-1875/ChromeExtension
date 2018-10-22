@@ -1,0 +1,89 @@
+a.packageName:link, a.packageName:visited {
+  color: #f7981d !important;
+}
+
+a:visited {
+  color: #2aa198 !important;
+}
+
+a:link {
+  color: #cb4b16 !important;
+}
+
+#browsecontent {
+  border-left: 3px solid #073642 !important;
+  border-right: 3px solid #073642 !important;
+  border-bottom: 3px solid #073642 !important;
+  background:#002b36 !important;
+}
+
+#browse {
+  /*
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+  */
+}
+
+div#sandbar {
+  background: #002b36 !important;
+}
+
+.gwt-FastTree {
+  background:#002b36 !important;
+}
+
+.outline-name {
+  color: #93a1a1 !important;
+}
+
+.outline-param {
+  color: #657b83 !important;
+}
+
+.x-c {
+  background-color: #073642 !important;
+}
+
+.x-i>a {
+  color: #93a1a1 !important;
+}
+
+.x-j {
+  color: #93a1a1 !important;
+}
+
+.n-m {
+  color: darkgrey;
+}
+
+div#source_code {
+  background:#002b36 !important;
+}
+
+.stx-plain {
+color: #000;
+}
+
+.stx-line {
+  color:#93a1a1 !important;
+}
+
+.stx-keyword,.stx-keyword a {
+  color: #b58900 !important;
+}
+
+.stx-keyword-s,.stx-keyword-s a {
+  color: #6f0465;
+}
+
+.stx-comment,.stx-comment a {
+  color: #2aa198 !important;
+}
+
+.stx-number,.stx-number a {
+  color: #2aa198 !important;
+}
+
+.stx-macro,.stx-macro a {
+  color: #cb4b16 !important;
+}
