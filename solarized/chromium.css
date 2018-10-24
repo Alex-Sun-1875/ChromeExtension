@@ -1,4 +1,5 @@
 a.packageName:link, a.packageName:visited {
+  font-weight: bold;
   color: #f7981d !important;
 }
 
@@ -9,6 +10,10 @@ a:visited {
 a:link {
   /* color: #cb4b16 !important; */
   color: #93a1a1 !important;
+}
+
+h3 {
+  color: #2aa198 !important;
 }
 
 #browsecontent {
@@ -52,6 +57,10 @@ div#sandbar {
 
 .outline-param {
   color: #657b83 !important;
+}
+
+.cb-a {
+  color: #93a1a1 !important;
 }
 
 .x-c {
@@ -116,6 +125,26 @@ div#sandbar {
   background-color: #586e75 !important;
 }
 
+.Gb-a {
+  color: #2aa198 !important;
+}
+
+.Gb-b {
+  color: #93a1a1 !important;
+}
+
+.Gb-c {
+  color: #888 !important;
+}
+
+.Gb-g {
+  color: #888 !important;
+}
+
+.R-y {
+  color: #93a1a1 !important;
+}
+
 #leftpanel_drag {
   background-color: #839496 !important;
 }
@@ -149,6 +178,10 @@ div#sandbar {
   border-top: solid 4px #839496 !important;
   background-color: #657b83 !important;
   border-bottom: solid 2px #839496 !important;
+}
+
+.content {
+  color: #93a1a1 !important;
 }
 
 .goog-button-base-top-shadow {
