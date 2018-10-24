@@ -56,7 +56,6 @@ div#sandbar {
 
 .x-c {
   background-color: #073642 !important;
-  padding-bottom: 4px;
 }
 
 .x-i>a {
@@ -112,7 +111,7 @@ div#sandbar {
 }
 
 #breadcrumbs {
-  background-color: #839496 !important;
+  background-color: #073642 !important;
 }
 
 .gwt-FastTree .selected .treeItemContent,
@@ -132,13 +131,17 @@ div#sandbar {
 }
 
 .cs-TabLayoutPanelTab {
-  margin: auto !important;
+ margin: auto !important;
 }
 
 .content-header {
   border-top: solid 4px #839496 !important;
   background-color: #657b83 !important;
   border-bottom: solid 2px #839496 !important;
+}
+
+.goog-button-base-top-shadow {
+
 }
 
 .lineNumberContainer {
