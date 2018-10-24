@@ -1,3 +1,7 @@
+* {
+  font-family: Hack !important;
+}
+
 a.packageName:link, a.packageName:visited {
   font-weight: bold;
   color: #f7981d !important;
