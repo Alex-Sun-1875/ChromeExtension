@@ -67,7 +67,17 @@ div#sandbar {
 }
 
 .n-m {
+  font-weight: bold !important;
   color: darkgrey;
+}
+
+.n-n {
+  font-weight: bold !important;
+}
+
+.m-f {
+  color: #2aa198 !important;
+  font-weight: bold;
 }
 
 .f-rb {
@@ -131,7 +141,8 @@ div#sandbar {
 }
 
 .cs-TabLayoutPanelTab {
- margin: auto !important;
+  border-radius: 2px !important;
+  margin: auto !important;
 }
 
 .content-header {
