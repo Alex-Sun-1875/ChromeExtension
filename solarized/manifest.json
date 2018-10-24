@@ -5,17 +5,17 @@
   "description":"Style Change Extension(Solarized)",
   "icons":
   {
-    "16":"Images/16.png",
-    "48":"Images/48.png",
-    "128":"Images/128.png"
+    "16":"img/16.png",
+    "48":"img/48.png",
+    "128":"img/128.png"
   },
   "background":
   {
-    "scripts": ["background.js"]
+    "scripts": ["js/background.js"]
   },
   "browser_action":
   {
-    "default_icon": "Images/16.png",
+    "default_icon": "img/16.png",
     "default_title": "Style Change"
   },
   "content_scripts":
@@ -24,7 +24,7 @@
       // "matches": ["<all_urls>"],
       "matches": ["*://cs.chromium.org/*"],
       // "js": ["content_scripts.js"],
-      "css": ["chromium.css"],
+      "css": ["css/chromium.css"],
       "run_at": "document_start"
     }
   ],
