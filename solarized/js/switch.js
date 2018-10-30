@@ -1,0 +1,9 @@
+$(".switch-wrap").click(function(){
+  if($(this).hasClass("active")){
+    $(this).removeClass("active");
+    $("#switch").text("ON");
+  }else{
+    $(this).addClass("active");
+    $("#switch").text("OFF");
+  }
+})
