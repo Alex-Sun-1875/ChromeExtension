@@ -1,9 +1,11 @@
+var bg = chrome.extension.getBackgroundPage();
+
 $(".switch-wrap").click(function(){
   if($(this).hasClass("active")){
     $(this).removeClass("active");
-    $("#switch").text("ON");
+    bg.setConfig({'result': 'off'});
   }else{
     $(this).addClass("active");
-    $("#switch").text("OFF");
+    bg.setConfig({'result': 'on'});
   }
 })
