@@ -1,8 +1,20 @@
-var config = {'result': 'on'};
+var default_config = {'switch': 'off'};
+
+var handler = {
+  set: function(obj, prop, value) {
+    obj[prop] = value;
+    if ('switch' === prop) {
+      console.log(obj);
+      sendMessageToContentScript(JSON.stringify(obj), function(response) { });
+    }
+    return true;
+  }
+};
+
+var config = new Proxy(default_config, handler);
 
 function setConfig(cfg) {
-  console.log(cfg);
-  config.result = cfg.result;
+  config.switch = cfg.switch;
 }
 
 function getConfig() {
@@ -19,17 +31,6 @@ function sendMessageToContentScript(message, callback)
         });
     });
 }
-
-Object.defineProperty(config, 'result', {
-  get: function() { },
-  set: function(value) {
-    result = value;
-    sendMessageToContentScript(JSON.stringify(config), function(response){});
-  },
-  // writable:true,
-  enumerable:true,
-  Configurable:true
-});
 
 (function(){
   chrome.runtime.onMessage.addListener(function(request, sender, sendResponse){
