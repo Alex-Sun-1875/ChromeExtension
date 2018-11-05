@@ -21,9 +21,10 @@
         "notifications","storage","http://*/*","https://*/*"
     ],
 
-    "web_accessible_resources":["solarized-dark-everywhere.user.js"],
+    "web_accessible_resources":["content_scripts.js"],
     "content_scripts":[{
-        "js":["solarized-dark-everywhere.user.js"],
-        "matches":["http://*/*","https://*/*"]
+        "js":["content_scripts.js"],
+        "matches":["http://*/*","https://*/*"],
+        "run_at": "document_start"
     }]
 }

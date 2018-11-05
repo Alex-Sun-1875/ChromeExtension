@@ -1,3 +1,5 @@
+var white_list = new RegExp();
+
 function dynamicLoadCustomCss(path) {
   console.log("load css from: " + path);
   var node = document.createElement("link");

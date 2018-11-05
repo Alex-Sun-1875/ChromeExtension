@@ -1,0 +1,93 @@
+body {
+  color:#93a1a1 !important;
+  background:#002b36 !important;
+}
+div {
+  color:#93a1a1 !important;
+  background:#002b36 !important;
+}
+a {
+  color:#2aa198 !important;
+  /* color:#0366d6 !important; (蓝色)*/
+  /* color:#6f42c1 !important; (紫色)*/
+  /* color:#d73a49 !important; (橙色)(code)*/
+  /* color:#005cc5 !important; (蓝色)(code)*/
+  /* color:#6a737d !important; (灰色)*/
+}
+code, pre, tt{
+  color:#b58900 !important;
+  background:#073642 !important;
+}
+/*
+tt{
+  border:0px solid #93a1a1 !important;
+}
+pre{
+  border-left:2px solid #93a1a1 !important;
+}
+a:hover{
+  background:#073642 !important;
+}
+*/
+/* .nohighlight:focus { outline:none; } */
+
+/*********************************************/
+
+
+* {
+  color: #93a1a1 !important;
+  border-color: #657b83 !important;
+}
+
+/*
+body, div, table, tr, td, ul, .ban, article, header, footer, blockquote, form, fieldset, a {
+  background-color: #002b36 !important;
+}
+*/
+
+body, header, footer {
+  background-color: #002b36 !important;
+}
+
+div {
+  background-color: #073642 !important;
+}
+
+article {
+  background-color: #073642 !important;
+}
+
+a, a span, h1, h2, h3, h4, h5 {
+  color: #2aa198 !important;
+}
+
+h1,h2,h3,h4,h5 {
+	border-bottom: 1px solid #073642 !important;
+	border-top: 1px solid #073642 !important;
+}
+
+code {
+  background-color: #657b83 !important;
+}
+
+a:hover {
+	background-color: #073642 !important;
+}
+
+a:visited, a:visited span {
+  /* color: #d73a49 !important; */
+  color: #d73a49 !important;
+}
+
+.l2 a {
+  color: #93a1a1 !important;
+}
+
+li a {
+		border-bottom: 1px solid #073642 !important;
+	}
+
+.leaflet-control a {
+  background-color: #ddd !important;
+}
+
