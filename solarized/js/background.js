@@ -1,8 +1,31 @@
-var default_config = {'switch': 'off'};
+var storage = window.localStorage;
+
+if (undefined == storage.getItem("config")) {
+  console.log("1111");
+  storage.setItem("config", JSON.stringify({"switch": "on"}));
+}
+
+var default_config = JSON.parse(storage.getItem("config"));
+console.log(default_config.switch);
+
+function readJsFromLocalFile(path) {
+  var css_str = $.ajax({
+    url: path,
+    type: "GET",
+    dataType: "text",
+    success: function(data) {
+      console.log(data);
+    }
+  });
+
+  return css_str;
+}
+console.log(default_config);
 
 var handler = {
   set: function(obj, prop, value) {
     obj[prop] = value;
+    storage.setItem("config", JSON.stringify(obj));
     if ('switch' === prop) {
       console.log(obj);
       sendMessageToContentScript(JSON.stringify(obj), function(response) { });
