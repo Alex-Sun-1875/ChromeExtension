@@ -17,18 +17,29 @@ function dynamicLoadCustomCss(path) {
 
 function dynamicRemoveCustomCss() {
   console.log("remove ext_style");
-  $("document").href = null;
+  $("#ext_style").attr("disabled", true);
+  $("#ext_style").remove();
 }
 
-dynamicRemoveCustomCss();
+function dynamicSelectCustomCss() {
+  var expr = new RegExp("/*:\/\/cs\.chromium\.org\/*");
+  if (expr.test(document.location.href)) {
+    dynamicLoadCustomCss("../css/chromium.css");
+  } else if ((new RegExp("https?:\/\/*")).test(document.location.href)) {
+    dynamicLoadCustomCss("../css/content_css_scripts.css");
+  }
+}
 
 (function() {
   chrome.runtime.onMessage.addListener(function(request, sender, sendResponse)
   {
     // location.reload();
     var config = JSON.parse(request);
+    console.log(config);
     if ("on" == config.switch) {
-      dynamicLoadCustomCss("../css/chromium.css");
+      dynamicSelectCustomCss();
+    } else if ("off" == config.switch) {
+      dynamicRemoveCustomCss();
     }
   });
 
@@ -36,7 +47,7 @@ dynamicRemoveCustomCss();
     console.log(response);
     var config = JSON.parse(response);
     if ("on" == config.switch) {
-      dynamicLoadCustomCss("../css/chromium.css");
+      dynamicSelectCustomCss();
     } else if ("off" == config.switch) {
       dynamicRemoveCustomCss();
     }

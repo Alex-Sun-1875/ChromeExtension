@@ -7,19 +7,6 @@ if (undefined == storage.getItem("config")) {
 
 var default_config = JSON.parse(storage.getItem("config"));
 console.log(default_config.switch);
-
-function readJsFromLocalFile(path) {
-  var css_str = $.ajax({
-    url: path,
-    type: "GET",
-    dataType: "text",
-    success: function(data) {
-      console.log(data);
-    }
-  });
-
-  return css_str;
-}
 console.log(default_config);
 
 var handler = {
