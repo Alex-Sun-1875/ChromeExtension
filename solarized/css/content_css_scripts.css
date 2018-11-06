@@ -1,6 +1,7 @@
 * {
   color: #93a1a1 !important;
   border-color: #657b83 !important;
+  /* font-family: Hack !important; */
 }
 a:visited {
   color: #93a1a1 !important;
@@ -1003,6 +1004,13 @@ svg > * text {
 .s_btn {
   color: #FFFFFF !important;
   background-color: #3385ff !important;
+}
+.nav-menu-container .nav-show-control .nav-menu-layout .nav-menu {
+  background: #083c4a !important;
+}
+#answer-bar {
+  color: #000000 !important;
+  background: #FFFFFF !important;
 }
 /*
 .bdsug .bdsug-feedback-wrap {
