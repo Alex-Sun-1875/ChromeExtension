@@ -8,7 +8,7 @@ function dynamicLoadCustomCss(path) {
   node.disabled = false;
   node.type = "text/css";
   node.href = chrome.extension.getURL(path);
-  var heads = document.getElementsByTagName("head");
+  var heads = document.getElementsByTagName("html");
   if (heads.length > 0) {
     heads[0].appendChild(node);
   } else {

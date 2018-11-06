@@ -2,9 +2,6 @@
   color: #93a1a1 !important;
   border-color: #657b83 !important;
 }
-a {
-  color: #268bd2 !important;
-}
 a:visited {
   color: #93a1a1 !important;
 }
@@ -14,6 +11,10 @@ body {
 }
 html {
   background-color: #002b36 !important;
+}
+header {
+  background: #083c4a !important;
+  border-bottom-color: #586e75 !important;
 }
 div {
   background-color: #083c4a !important;
@@ -991,6 +992,9 @@ svg > * text {
 .recommend-right .recommend-fixed-box {
   background: #002b36 !important;
 }
+.nav-bar .to_post {
+  background: #ffffff !important;
+}
 
 /******************** BaiDu *********************/
 #kw, .s_ipt_wr.bg {
@@ -1000,14 +1004,17 @@ svg > * text {
   color: #FFFFFF !important;
   background-color: #3385ff !important;
 }
-
+/*
 .bdsug .bdsug-feedback-wrap {
   background-color: #FFFFFF !important;
   color: #000000 !important;
 }
-
-.s_ipt_wr {
+*/
+a.bri {
   background-color: #FFFFFF !important;
 }
 
 /****************** GooGle *********************/
+.w8qArf .fl {
+  color: #2aa198 !important;
+}
