@@ -1,3 +1,4 @@
+// TODO: Add white list feature(use localstorage)
 var white_list = new RegExp();
 
 function dynamicLoadCustomCss(path) {
