@@ -33,7 +33,8 @@ function dynamicSelectCustomCss() {
   if (expr.test(document.location.href)) {
     dynamicLoadCustomCss("../css/chromium.css");
   } else if ((new RegExp("https?:\/\/*")).test(document.location.href)) {
-    dynamicLoadCustomCss("../css/content_css_scripts.css");
+    // dynamicLoadCustomCss("../css/content_css_scripts.css");
+    dynamicLoadCustomCss("../css/dark_mode.css");
   }
 }
 
