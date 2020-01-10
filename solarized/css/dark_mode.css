@@ -1,3 +1,8 @@
+* {
+  color: var(--cr-secondary-text-color);
+  /* background-color: var(--md-background-color); */
+}
+
 html {
   /* This is a custom, Chrome-specific color that does not have a --paper or
    * --google equivalent. */
@@ -559,17 +564,22 @@ html {
     color: var(--cr-primary-text-color);
   }
 
-  div > div {
+  div>div {
     color: var(--cr-secondary-text-color);
   }
 
-  h1, h2, h3, h4, h5 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
     /* TODO: */
     background-color: var(--md-background-color);
     color: var(--cr-primary-text-color);
   }
 
-  a, a span {
+  a,
+  a span {
     color: var(--cr-link-color);
   }
 
@@ -588,20 +598,23 @@ html {
     color: var(--cr-primary-text-color);
   }
 
-  blockquote, pre {
+  blockquote,
+  pre {
     /* TODO: */
     background-color: var(--md-background-color);
     color: var(--cr-primary-text-color);
   }
 
-  input, textarea {
+  input,
+  textarea {
     /* TODO: */
     background-color: var(--md-background-color);
     color: var(--cr-primary-text-color);
   }
 
   /*********************** Baidu ***********************/
-  #wrapper, #head {
+  #wrapper,
+  #head {
     border-bottom: none;
   }
 
@@ -613,6 +626,7 @@ html {
   .s_tab_inner {
     background-color: transparent;
   }
+
   #s_tab a:hover {
     color: var(--cr-primary-text-color);
   }
@@ -624,12 +638,12 @@ html {
   #u {
     background-color: transparent;
   }
-  
+
   #u a {
     color: #666666;
   }
 
-  .wrapper_l > #head > .head_wrapper > .s_form {
+  .wrapper_l>#head>.head_wrapper>.s_form {
     background-color: var(--md-toolbar-color);
   }
 
@@ -645,7 +659,8 @@ html {
     border: var(--cr-separator-line);
   }
 
-  .c-table th, .c-table td {
+  .c-table th,
+  .c-table td {
     border-bottom: var(--cr-separator-line);
   }
 
@@ -658,7 +673,7 @@ html {
     color: var(--cr-link-color) !important;
   }
 
-  #container > #rs {
+  #container>#rs {
     background-image: var(--cr-card-elevation_-_background-image);
     background-color: var(--cr-card-background-color);
   }
@@ -697,7 +712,7 @@ html {
     color: #00695c !important;
   }
 
-  a[data-landurl] > text {
+  a[data-landurl]>text {
     color: var(--md-text-color) !important;
   }
 

@@ -2,7 +2,8 @@
   font-family: Hack !important;
 }
 
-a.packageName:link, a.packageName:visited {
+a.packageName:link,
+a.packageName:visited {
   font-weight: bold;
   color: #f7981d !important;
 }
@@ -24,7 +25,7 @@ h3 {
   border-left: 3px solid #839496 !important;
   border-right: 3px solid #839496 !important;
   border-bottom: 3px solid #839496 !important;
-  background:#002b36 !important;
+  background: #002b36 !important;
 }
 
 #browse {
@@ -37,7 +38,8 @@ h3 {
   background-color: transparent !important;
 }
 
-a.lineNumber:link, a.lineNumber:visited {
+a.lineNumber:link,
+a.lineNumber:visited {
   background-color: transparent !important;
 }
 
@@ -48,7 +50,7 @@ div#sandbar {
 .gwt-FastTree {
   font-size: 100% !important;
   font-family: monospace !important;
-  background:#002b36 !important;
+  background: #002b36 !important;
 }
 
 .focusableScrollPanel {
@@ -137,7 +139,21 @@ div#sandbar {
   background-color: #586e75 !important;
 }
 
+li>.f-q>a {
+  color: #93a1a1 !important;
+}
+
+li>.f-q>a:visited {
+  color: #2aa198 !important;
+}
+
 .F-o {
+  color: #93a1a1;
+}
+
+.Fb-a,
+.Fb-b,
+.Fb-c {
   color: #93a1a1;
 }
 
@@ -175,7 +191,8 @@ div#sandbar {
   background-color: #586e75 !important;
 }
 
-#bottompanel_drag, #modifiedfiles_drag {
+#bottompanel_drag,
+#modifiedfiles_drag {
   background-color: #839496 !important;
 }
 
@@ -200,10 +217,6 @@ div#sandbar {
   color: #93a1a1 !important;
 }
 
-.goog-button-base-top-shadow {
-
-}
-
 .lineNumberContainer {
   background-color: #073642 !important;
   border-right: 2px solid !important;
@@ -211,33 +224,38 @@ div#sandbar {
 }
 
 div#source_code {
-  background:#002b36 !important;
+  background: #002b36 !important;
 }
 
 .stx-plain {
-color: #000;
+  color: #000;
 }
 
 .stx-line {
-  color:#93a1a1 !important;
+  color: #93a1a1 !important;
 }
 
-.stx-keyword,.stx-keyword a {
+.stx-keyword,
+.stx-keyword a {
   color: #f7981d !important;
 }
 
-.stx-keyword-s,.stx-keyword-s a {
+.stx-keyword-s,
+.stx-keyword-s a {
   color: #6f0465;
 }
 
-.stx-comment,.stx-comment a {
+.stx-comment,
+.stx-comment a {
   color: #2aa198 !important;
 }
 
-.stx-number,.stx-number a {
+.stx-number,
+.stx-number a {
   color: #2aa198 !important;
 }
 
-.stx-macro,.stx-macro a {
+.stx-macro,
+.stx-macro a {
   color: #cb4b16 !important;
 }
