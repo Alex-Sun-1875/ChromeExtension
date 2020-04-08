@@ -8,6 +8,10 @@ code-container {
   font-size: 90% !important;
 }
 
+.root-loader {
+  background-color: #002b36 !important;
+}
+
 .cm-meta {
   color: #cb4b16 !important;
 }
@@ -116,4 +120,24 @@ depth-finder .tree-node>a>mat-icon {
 .mat-icon-button i,
 .mat-icon-button .mat-icon {
   color: #556b74 !important;
+}
+
+.fill-cell {
+  color: #1A73E8 !important;
+}
+
+.grimoire-secondary-text {
+    color: inherit !important;
+}
+
+.project-page-container .short-description {
+    color: inherit !important;
+}
+
+.project-page-container .about, .project-page-container .name, .project-page-container .long-description, .project-page-container .repository-label {
+    color: inherit !important;
+}
+
+.project-page-container table tbody>tr:hover {
+    background-color: #6b8f8f !important;
 }
