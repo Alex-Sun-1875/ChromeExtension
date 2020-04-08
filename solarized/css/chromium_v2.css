@@ -1,0 +1,119 @@
+body {
+  background-color: #002b36 !important;
+  color: #93a1a1 !important;
+}
+
+code-container {
+  font-family: Hack;
+  font-size: 90% !important;
+}
+
+.cm-meta {
+  color: #cb4b16 !important;
+}
+
+.cm-string > a.semantic-decoration {
+  color: #080 !important;
+}
+
+a {
+  color: #93a1a1 !important;
+}
+
+.cm-comment {
+  color: #2aa198 !important;
+}
+
+format-code {
+  color: #93a1a1 !important;
+}
+
+.cm-keyword {
+  color: #f7981d !important;
+}
+
+.CodeMirror-gutters {
+  /* border-right: 1px solid #657b83 !important; */
+  border-right: none !important;
+  background-color: #184955 !important;
+  white-space: nowrap;
+}
+
+.mat-tree,
+.mat-table,
+depth-finder {
+  background-color: transparent !important;
+  font-family: Hack !important;
+}
+
+.mat-tree-node,
+.mat-nested-tree-node {
+  color: inherit !important;
+}
+
+splitter {
+  background-color: #657b83 !important;
+}
+
+.header-bar {
+  background-color: #184955 !important;
+}
+
+.mat-cell,
+.mat-footer-cell {
+  color: inherit !important;
+}
+
+history-table .history-table-row.right-row {
+  background-color: #657b83 !important;
+}
+
+.cm-s-cider .CodeMirror-linenumber {
+  color: inherit !important;
+}
+
+.gmat-tabs.mat-primary .mat-tab-label,
+.gmat-tabs.mat-primary .mat-tab-link {
+  color: inherit !important;
+}
+
+.mat-header-cell {
+  color: inherit !important;
+}
+
+.mat-form-field-label,
+.mat-hint {
+  color: inherit !important;
+}
+
+loading.background,
+markdown-content code {
+  background-color: #002b36 !important;
+}
+
+.header {
+  background-color: #073b47 !important;
+}
+
+.mat-tab-labels {
+  background-color: #073b47 !important;
+}
+
+diff-detail-header,
+detail-header,
+markdown-tab-header {
+  border-bottom-width: 0px !important;
+}
+
+repository-breadcrumb {
+  border-bottom-width: 0px !important;
+}
+
+depth-finder .tree-node>a>mat-icon {
+  color: #556b74 !important;
+}
+
+.mat-icon-button i,
+.mat-icon-button .mat-icon {
+  color: #556b74 !important;
+}

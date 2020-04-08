@@ -32,6 +32,8 @@ function dynamicSelectCustomCss() {
   var expr = new RegExp("/*:\/\/cs\.chromium\.org\/*");
   if (expr.test(document.location.href)) {
     dynamicLoadCustomCss("../css/chromium.css");
+  } else if (new RegExp("/*:\/\/source\.chromium\.org\/*").test(document.location.href)) {
+    dynamicLoadCustomCss("../css/chromium_v2.css");
   } else if ((new RegExp("https?:\/\/*")).test(document.location.href)) {
     dynamicLoadCustomCss("../css/content_css_scripts.css");
     // dynamicLoadCustomCss("../css/dark_mode.css");
@@ -50,7 +52,9 @@ function dynamicSelectCustomCss() {
     }
   });
 
-  chrome.runtime.sendMessage({ command: 'getSwitch' }, function(response) {
+  chrome.runtime.sendMessage({
+    command: 'getSwitch'
+  }, function(response) {
     console.log(response);
     var config = JSON.parse(response);
     if ("on" == config.switch) {
