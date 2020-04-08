@@ -259,3 +259,8 @@ div#source_code {
 .stx-macro a {
   color: #cb4b16 !important;
 }
+
+.stx-codeblock,
+.stx-codeblock a {
+  color: #f7981d !important;
+}
