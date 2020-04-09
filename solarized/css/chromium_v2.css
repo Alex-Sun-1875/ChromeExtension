@@ -24,7 +24,15 @@ a {
   color: #93a1a1 !important;
 }
 
+a:visited {
+  color: #2aa198 !important;
+}
+
 .cm-comment {
+  color: #2aa198 !important;
+}
+
+.cm-comment > a {
   color: #2aa198 !important;
 }
 
@@ -37,7 +45,6 @@ format-code {
 }
 
 .CodeMirror-gutters {
-  /* border-right: 1px solid #657b83 !important; */
   border-right: none !important;
   background-color: #184955 !important;
   white-space: nowrap;
@@ -114,12 +121,12 @@ repository-breadcrumb {
 }
 
 depth-finder .tree-node>a>mat-icon {
-  color: #556b74 !important;
+  color: #93a1a1 !important;
 }
 
 .mat-icon-button i,
 .mat-icon-button .mat-icon {
-  color: #556b74 !important;
+  color: #93a1a1 !important;
 }
 
 .fill-cell {
@@ -140,4 +147,36 @@ depth-finder .tree-node>a>mat-icon {
 
 .project-page-container table tbody>tr:hover {
     background-color: #6b8f8f !important;
+}
+
+.mat-expansion-panel {
+  background: inherit !important;
+}
+
+.mat-expansion-panel-header-title {
+  color: #93a1a1 !important;
+}
+
+file-list a.file-item>mat-icon {
+  color: inherit !important;
+}
+
+.mat-button.mat-primary,
+.mat-icon-button.mat-primary,
+.mat-stroked-button.mat-primary {
+  color: inherit !important;
+}
+
+dropdown-button button .trigger-icon polygon,
+dropdown-button button.dense[type] .trigger-icon polygon {
+  fill: currentColor !important;
+}
+
+div>form>mat-form-field {
+  border-radius: 8px !important;
+  background-color: #184955 !important;
+}
+
+global-search-box .search-bar.m2NavEnabled {
+  background-color: #184955 !important;
 }
