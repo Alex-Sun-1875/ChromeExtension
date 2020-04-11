@@ -45,8 +45,11 @@ a {
   color: #93a1a1 !important;
 }
 
-a:visited, .legacy-cs-link, .legacy-cs-link:visited,
-.cm-comment, .cm-comment>a {
+a:visited,
+.legacy-cs-link,
+.legacy-cs-link:visited,
+.cm-comment,
+.cm-comment>a {
   color: #2aa198 !important;
 }
 
@@ -126,11 +129,10 @@ markdown-content code {
 
 diff-detail-header,
 detail-header,
-markdown-tab-header {
-  border-bottom-width: 0px !important;
-}
-
-repository-breadcrumb {
+markdown-tab-header,
+repository-breadcrumb,
+.mat-tab-nav-bar,
+.mat-tab-header {
   border-bottom-width: 0px !important;
 }
 
@@ -196,4 +198,16 @@ div>form>mat-form-field {
 
 global-search-box .search-bar.m2NavEnabled {
   background-color: #184955 !important;
+}
+
+file-search-result .result-header {
+  background-color: #073642 !important;
+}
+
+.file-matches-navigation {
+  background-color: #073642 !important;
+}
+
+outline-controls {
+  background-color: #073642 !important;
 }
