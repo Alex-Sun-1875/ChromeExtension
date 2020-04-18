@@ -211,3 +211,7 @@ file-search-result .result-header {
 outline-controls {
   background-color: #073642 !important;
 }
+
+.mat-form-field textarea {
+  caret-color: #93a1a1 !important;
+}

@@ -1283,6 +1283,26 @@ svg>* text {
   background: #ffffff !important;
 }
 
+main #column .column_article_list li {
+  background: inherit !important;
+}
+
+.ellipsis:before {
+  background-color: transparent !important;
+  background: linear-gradient(to right, transparent, #184955 60%);
+}
+
+.ellipsis:after {
+  background-color: #184955 !important;
+}
+
+#csdn_tool_otherPlace .search_bar .input_search,
+.csdn-toolbar .container .search_bar .input_search {
+  caret-color: #93a1a1 !important;
+  color: #93a1a1 !important;
+  background-color: #184955 !important;
+}
+
 /******************** BaiDu *********************/
 #kw,
 .s_ipt_wr.bg {
