@@ -1303,6 +1303,14 @@ main #column .column_article_list li {
   background-color: #184955 !important;
 }
 
+.csdn-side-toolbar, .tool-box {
+  display: none !important;
+}
+
+.recommend-right .recommend-list-box .align-items-stretch::-webkit-scrollbar-thumb {
+  background-color: #184955 !important;
+}
+
 /******************** BaiDu *********************/
 #kw,
 .s_ipt_wr.bg {
@@ -1323,12 +1331,6 @@ main #column .column_article_list li {
   background: #FFFFFF !important;
 }
 
-/*
-.bdsug .bdsug-feedback-wrap {
-  background-color: #FFFFFF !important;
-  color: #000000 !important;
-}
-*/
 a.bri {
   background-color: #FFFFFF !important;
 }
