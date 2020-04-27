@@ -53,12 +53,17 @@ a:visited,
   color: #2aa198 !important;
 }
 
+a.semantic-decoration:visited {
+  /* color: rgb(202, 82, 39) !important; */
+  color: #cb4b16 !important;
+}
+
 format-code {
   color: #93a1a1 !important;
 }
 
 .cm-keyword {
-  color: #f7981d !important;
+  color: #c678dd !important;
 }
 
 .CodeMirror-gutters {
@@ -242,4 +247,12 @@ outline-controls {
 
 ::-webkit-scrollbar-track:active {
   background-color: #073642 !important;
+}
+
+file-node.gmat-overline {
+  color: #93a1a1 !important;
+}
+
+.cm-s-cider .CodeMirror-activeline-background {
+  background-color: #184955 !important;
 }
