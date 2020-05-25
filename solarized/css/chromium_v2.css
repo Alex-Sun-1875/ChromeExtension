@@ -26,7 +26,45 @@ body {
 
 code-container {
   font-family: Hack;
-  font-size: 90% !important;
+  font-size: 14px !important;
+}
+
+.code-and-highlight-container {
+  background-color: #002b36 !important;
+}
+
+mat-header-row {
+  background-color: #002b36 !important;
+}
+
+file-content-pager {
+  background-color: #073b47 !important;
+}
+
+oss-home-search-box .search-bar {
+  background-color: #184955 !important;
+}
+
+file-search-snippet {
+  background-color: #002b36 !important;
+}
+
+[gme-button][gme-button].hairline {
+  background: #586e75 !important;
+}
+
+.cm-s-cider-dark {
+  color: inherit !important;
+  background-color: #002b36 !important;
+}
+
+.project-page-container table th {
+  border-color: rgba(255, 255, 255, 0.12) !important;
+  background-color: rgba(33, 33, 33, 0.5);
+}
+
+.project-page-container table tr:last-child {
+  border-color: inherit !important;
 }
 
 .root-loader {
