@@ -34,6 +34,8 @@ function dynamicSelectCustomCss() {
     dynamicLoadCustomCss("../css/chromium.css");
   } else if (new RegExp("/*:\/\/source\.chromium\.org\/*").test(document.location.href)) {
     dynamicLoadCustomCss("../css/chromium_v2.css");
+  } else if ((new RegExp("https?:\/\/leetcode*")).test(document.location.href)) {
+    dynamicLoadCustomCss("../css/leetcode.css");
   } else if ((new RegExp("https?:\/\/*")).test(document.location.href)) {
     dynamicLoadCustomCss("../css/content_css_scripts.css");
     // dynamicLoadCustomCss("../css/dark_mode.css");
