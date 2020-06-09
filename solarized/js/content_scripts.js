@@ -36,6 +36,8 @@ function dynamicSelectCustomCss() {
     dynamicLoadCustomCss("../css/chromium_v2.css");
   } else if ((new RegExp("https?:\/\/leetcode*")).test(document.location.href)) {
     dynamicLoadCustomCss("../css/leetcode.css");
+  } else if ((new RegExp("https?:\/\/docs.google.com/*")).test(document.location.href)) {
+    dynamicLoadCustomCss("../css/google_docs.css");
   } else if ((new RegExp("https?:\/\/*")).test(document.location.href)) {
     dynamicLoadCustomCss("../css/content_css_scripts.css");
     // dynamicLoadCustomCss("../css/dark_mode.css");

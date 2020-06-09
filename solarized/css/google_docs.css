@@ -1,0 +1,72 @@
+* {
+  color: #93a1a1 !important;
+  border-color: #657b83 !important;
+  /* font-family: Hack !important; */
+}
+
+a:visited {
+  color: #93a1a1 !important;
+}
+
+body {
+  background-color: #002b36 !important;
+  color: #839496 !important;
+}
+
+html {
+  background-color: #002b36 !important;
+}
+
+header {
+  background: #073642 !important;
+  border-bottom-color: #586e75 !important;
+}
+
+a,
+a span,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #2aa198 !important;
+}
+
+input,
+textarea {
+  background-color: #00313e !important;
+  color: #839496 !important;
+}
+
+blockquote,
+pre {
+  background-color: #00313e !important;
+  color: #839496 !important;
+}
+
+* {
+  border-color: #00313e !important;
+}
+
+.kix-page-bottom,
+.kix-page-column,
+.kix-appview-editor,
+.docs-print-block.kix-page-header {
+  background-color: #002b36 !important;
+}
+
+.companion-app-switcher-container,
+.docs-material #docs-header .docs-titlebar-buttons,
+#docs-header-container,
+#docs-bars {
+  background-color: #094352 !important;
+}
+
+.outline-refresh #navigation-widget-bottom-fade {
+  background: none !important;
+}
+
+#navigation-widget-top-shadow {
+  display: none !important;
+}
+
