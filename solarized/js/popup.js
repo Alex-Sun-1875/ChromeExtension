@@ -1,19 +1,24 @@
 (function() {
-  var bg = chrome.extension.getBackgroundPage();
+  function updateIcon(enable) {
+    $('#switch').attr('active', enable);
+  }
 
-  $(".switch-wrap").click(function() {
-    if ($(this).hasClass("active")) {
-      $(this).removeClass("active");
-      bg.setConfig({ 'switch': 'off' });
-    } else {
-      $(this).addClass("active");
-      bg.setConfig({ 'switch': 'on' });
+  $('#switch').click(() => {
+    chrome.storage.local.get(['enable'], (res) => {
+      chrome.storage.local.set({
+        enable: !res.enable
+      });
+    });
+  });
+
+  chrome.storage.onChanged.addListener((changes, area_name) => {
+    if (area_name == 'local' && changes.enable) {
+      updateIcon(changes.enable.newValue);
     }
   });
 
-  if (bg.default_config.switch === 'on') {
-    $(".switch-wrap").addClass("active");
-  } else {
-    $(".switch-wrap").removeClass("active");
-  }
+  chrome.storage.local.get(['enable'], (res) => {
+    updateIcon(res.enable);
+  });
+
 })();

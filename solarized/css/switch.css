@@ -1,4 +1,4 @@
-.switch-wrap {
+#switch {
   position: relative;
   display: inline-block;
   width: 42px;
@@ -13,7 +13,7 @@
   vertical-align: middle;
 }
 
-.switch-wrap span {
+#switch span {
   position: absolute;
   top: 0;
   left: 0;
@@ -25,11 +25,11 @@
   background-color: #fff;
 }
 
-.switch-wrap.active {
+#switch[active=true] {
   border-color: #33DB70;
   background-color: #33DB70;
 }
 
-.switch-wrap.active span {
+#switch[active=true] span {
   transform: translateX(20px);
 }
