@@ -294,3 +294,8 @@ file-node.gmat-overline {
 .cm-s-cider .CodeMirror-activeline-background {
   background-color: #184955 !important;
 }
+
+.CodeMirror-linenumber.CodeMirror-gutter-elt {
+  font-family: Hack;
+  font-size: 14px;
+}
