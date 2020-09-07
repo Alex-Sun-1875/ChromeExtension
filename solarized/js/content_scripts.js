@@ -36,7 +36,7 @@
     } else if (new RegExp("/*:\/\/source\.chromium\.org\/*").test(document.location.href)) {
       dynamicLoadCustomCss("../css/chromium_v2.css");
     } else if ((new RegExp("https?:\/\/leetcode*")).test(document.location.href)) {
-      dynamicLoadCustomCss("../css/leetcode.css");
+      // dynamicLoadCustomCss("../css/leetcode.css");
     } else if ((new RegExp("https?:\/\/docs.google.com/*")).test(document.location.href)) {
       dynamicLoadCustomCss("../css/google_docs.css");
     } else if ((new RegExp("https?:\/\/*")).test(document.location.href)) {
